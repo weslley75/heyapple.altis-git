@@ -53,6 +53,8 @@ switch (true) do
 			["You've taken out your earplugs.", 5] call mf_notify_client;
 		};
 	};
+
+	// Holster Weapon - H Key
 	case (_key in A3W_customKeys_holster):
 	{
 		if (vehicle player == player && currentWeapon player != "")
