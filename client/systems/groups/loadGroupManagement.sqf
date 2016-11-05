@@ -108,7 +108,7 @@ while{groupManagmentActive} do
 	    {
 	        //Add to list
 			if (isStreamFriendlyUIEnabled) then {
-				_namestr = "[PLAYER]";
+				_namestr = name _x;
 			} else {
 				_namestr = name _x;
 			};
@@ -120,7 +120,7 @@ while{groupManagmentActive} do
 	//Update group player list
 	{
 		if (isStreamFriendlyUIEnabled) then {
-			_namestr = "[PLAYER]";
+			_namestr = name _x;
 		} else {
 			_namestr = name _x;
 		};
