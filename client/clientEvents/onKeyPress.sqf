@@ -54,6 +54,20 @@ switch (true) do
 		};
 	};
 
+	// Emergency Eject - Del Key
+	case (_key in A3W_customKeys_eject):
+	{
+		_veh = vehicle player;
+
+		if (alive player && _veh != player) then
+		{
+			if (_veh isKindOf 'Air' && !(_veh isKindOf 'ParachuteBase')) then
+			{
+				[-9, false, true, ""] execVM "client\functions\fn_emergencyEject.sqf";
+			};
+		};
+	};
+
 	// Holster Weapon - H Key
 	case (_key in A3W_customKeys_holster):
 	{
